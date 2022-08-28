@@ -1,0 +1,35 @@
+use `mobix`;
+CREATE TABLE products (
+	productID int(6) NOT NULL AUTO_INCREMENT,
+	brand varchar(15) DEFAULT NULL,
+	model varchar(50) DEFAULT NULL,
+	ram int(8) NOT NULL,
+	screenSize decimal(2,1) NOT NULL,
+	cameraResolution decimal(3,1) NOT NULL,
+	price decimal(6,2) NOT NULL,
+	storage int(4) NOT NULL,
+	image varchar(50) NOT NULL,
+	image_1 varchar(50) NOT NULL,
+	image_2 varchar(50) NOT NULL,
+	type  varchar(20) NOT NULL,
+	description varchar(5000) NOT NULL,
+	PRIMARY KEY (productID)
+	)
+	ENGINE=InnoDB AUTO_INCREMENT=100001 DEFAULT CHARSET=utf8mb4;
+    
+INSERT INTO products VALUES('', "APPLE", "IPhone 11 Pro", 4, 5.8, 12.0, 1749.0, 128, '100001.jpg', '100001_1.jpg', '100001_2.jpg', 'smartphone', 'iPhone 11 Pro lets you capture videos that are beautifully true to life, with greater detail and smoother motion. Epic processing power means it can shoot 4K video with extended dynamic range and cinematic video stabilisation — all at 60 fps.'),
+('', 'SAMSUNG', 'Samsung Galaxy s20', 8, 6.2, 12.0, 1499.0, 64, '100002.jpg','100002_1.jpg', '100002_2.jpg', 'smartphone', 'Design and display. The Samsung S20 has a 6.2-inch display, offering exactly 0.1-inch more screen real estate than 2019s 6.1-inch S10. It doesnt dramatically change the overall size of the phone, and its max resolution remains the same as that of recent Samsung Galaxy S models at WQHD+ (3040 x 1440)'),
+('', 'ONEPLUS', 'Oneplus 7T', 12, 5.8, 12.0, 1749.0, 64, '100003.jpg','100003_1.jpg', '100003_2.jpg', 'smartphone', 'The OnePlus 7T offers three rear cameras - a standard 48-megapixel one, a wide-angle one, and a 2X optical zoom one - along with the brand new Qualcomm Snapdragon 855 processor, a 90Hz screen, and frosted glass rear panel.'),
+('', 'GOOGLE', 'Google Pixel 4', 4, 5.8, 12.0, 1269.0, 128, '100004.jpg', '100004_1.jpg', '100004_2.jpg','smartphone', 'The Pixel 4 was designed to be Googles best and most impressive Pixel yet. It has an all-new 90Hz display, Motion Sense hand gestures, powerful face unlock, and dual rear cameras. Theres also a revamped design and upgraded internals, all of which come together to create an enticing overall package.'), 
+('', 'HUAWEI', 'HUAWEI P30', 4, 5.8, 12.0, 1749.0, 64, '100005.jpg', '100005_1.jpg', '100005_2.jpg','smartphone', 'The Huawei P30 Pro is an impressive piece of kit. It has a gorgeous curved screen, flagship Kirin 980 processor, IP68 water and dust resistance, reverse wireless charging, a faster in-display fingerprint scanner, and more. But lets be honest, the P30 Pro is really all about the camera. And what a camera it is!'), 
+('', 'APPLE', 'IPhone SE 2020', 8, 5.8, 12.0, 769.0, 32, '100006.jpg', '100006_1.jpg', '100006_2.jpg', 'smartphone', 'The iPhone SE 2020 offers decent but not top-end performance: a good camera, enough power, a great App Store to plunder and a lighter iPhone than recent models. Battery life and screen tech could be better, the headphone jack is a miss, but - for the price - this is one of the best iPhones Apple has ever made.'), 
+('', 'APPLE', 'IPhone X', 16, 5.8, 12.0, 999.0, 64, '100007.jpg','100007_1.jpg', '100007_2.jpg', 'smartphone', 'The iPhone X was Apples flagship 10th anniversary iPhone featuring a 5.8-inch OLED display, facial recognition and 3D camera functionality, a glass body, and an A11 Bionic processor. Launched November 3, 2017, discontinued with the launch of the iPhone XR, XS, and XS Max.'), 
+('', 'SAMSUNG', 'Samsung Galaxy Note10', 16, 5.8, 12.0, 2149.0, 128, '100008.jpg', '100008_1.jpg', '100008_2.jpg', 'smartphone', 'It offers a 6.7-inch Super AMOLED display with a 2400 x 1080 resolution, Samsungs Exynos 8895 processor, up to 8GB of RAM, and triple 12MP cameras — including wide, ultra-wide, and telephoto sensors. You also get a hefty battery at 4,500 mAh. ... Samsung Galaxy Note 10+ vs.'), 
+('', 'SAMSUNG', 'Samsung Galaxy A30', 4, 5.8, 12.0, 849.0, 32, '100009.jpg', '100009_1.jpg', '100009_2.jpg', 'smartphone', 'Samsung Galaxy A30 smartphone runs on Android v9. 0 (Pie) operating system. The phone is powered by Octa core (1.8 GHz, Dual core, Cortex A73 + 1.6 GHz, Hexa Core, Cortex A53) processor. ... On camera front, the buyers get a 16 MP Front Camera and on the rear, theres an 16 MP + 5 MP camera with features like Fixed Focus'),
+('', 'SAMSUNG', 'Samsung Glaxy S10', 8, 5.8, 12.0, 1199.0, 64, '100010.jpg', '100010_1.jpg', '100010_2.jpg', 'smartphone', 'The Galaxy S10 packs in a 3400mAh battery and manages to deliver over one day of battery life. It sports a triple camera setup at the back onsisting of a 12-megapixel telephoto camera, 12-megapixel wide-angle camera and 16-megapixel ultra wide camera.'),
+('', 'SAMSUNG', 'Samsung Glaxy A20', 12, 5.8, 12.0, 679.0, 32, '100011.jpg', '100011_1.jpg', '100011_2.jpg', 'smartphone', 'Samsung Galaxy A20 smartphone was launched in March 2019. ... Samsung Galaxy A20 is powered by an octa-core Samsung Exynos 7884 processor that features 2 cores clocked at 1.6GHz and 6 cores clocked at 1.35GHz. It comes with 3GB of RAM. The Samsung Galaxy A20 runs Android and is powered by a 4000mAh battery.'),
+('', 'ONEPLUS', 'Oneplus 6T', 12, 5.8, 12.0, 499.0, 32, '100012.jpg', '100012_1.jpg', '100012_2.jpg', 'smartphone', 'OnePlus 6T is loaded with some enthralling new elements that make it one of the finest smartphones in such a price range. The mobile has a huge 6.41" (16.28 cm) display along with a screen resolution of 1080 x 2280 pixels.'),
+('', 'GOOGLE', 'Google Pixel 3', 4, 5.8, 12.0, 799.0, 32, '100013.jpg', '100013_1.jpg', '100013_2.jpg', 'smartphone', 'Powering the phone is a Snapdragon 845 processor. The phone has 4GB of RAM and comes in 64GB and 128GB internal storage options. It is a single-SIM device and has an eSIM. At the back, the Pixel 3 has a single 12.2-megapixel camera along with the LED flash.'), 
+('', 'GOOGLE', 'Google Pixel 3a', 4, 5.8, 12.0, 549.0, 16, '100014.jpg', '100014_1.jpg', '100014_2.jpg', 'smartphone', 'The Pixel 3a offers a single rear camera at 12.2 megapixels with a f/1.8 aperture, and it can do all sorts of tricks. That includes Night Sight, which allows you to capture great photos even in complete darkness, as well as bokeh Portrait Mode and Super Res Zoom, for digital zoom thats comparable with optical.'), 
+('', 'HUAWEI', 'HUAWEI Y7', 4, 5.8, 12.0, 1229.0, 64, '100015.jpg', '100015_1.jpg', '100015_2.jpg', 'smartphone', 'The Huawei Y7 Pro Smartphone features a 6.26" Dewdrop display for a clear view with more saturation and natural colours no matter which angle youre looking at it. It has a dual rear camera design and a 16 MP front camera with automatic retouching for capturing great selfies.'),
+('', 'HUAWEI', 'HUAWEI Mate20', 4, 5.8, 12.0, 1450.0, 128, '100016.jpg', '100016_1.jpg', '100016_2.jpg', 'smartphone', 'Huawei Mate 20 is powered by an octa-core HiSilicon Kirin 980 processor that features 2 cores clocked at 2.6GHz, 2 cores clocked at 1.92GHz and 4 cores clocked at 1.8GHz. It comes with 4GB of RAM. The Huawei Mate 20 runs Android 9.0 and is powered by a 4000mAh non-removable battery.');
